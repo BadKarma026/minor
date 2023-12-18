@@ -24,7 +24,7 @@ def quiz():
         user_recommended = recommenders.quiz_user_user_recommender(utils.create_new_user(quiz_results))
         print(f'user_recommended: {user_recommended}')
 
-        ### Because you liked X ###
+        ### Because you liked X dish ###
         item_recommended = recommenders.item_item_recommender(title=title, new_user=utils.create_new_user(quiz_results))
         # from quiz results, get category, and randomly select 2 to return recipes in that category
         print(f'item_recommended: {item_recommended}')
